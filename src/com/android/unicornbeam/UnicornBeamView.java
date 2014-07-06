@@ -1,16 +1,16 @@
-package com.android.phasebeam;
+package com.android.unicornbeam;
 
 import android.content.Context;
 import android.renderscript.RSSurfaceView;
 import android.renderscript.RenderScriptGL;
 import android.view.SurfaceHolder;
 
-public class PhaseBeamView extends RSSurfaceView {
+public class UnicornBeamView extends RSSurfaceView {
 
     private RenderScriptGL mRS;
-    private PhaseBeamRS mRender;
+    private UnicornBeamRS mRender;
 
-    public PhaseBeamView(Context context) {
+    public UnicornBeamView(Context context) {
         super(context);
         setFocusable(true);
         setFocusableInTouchMode(true);
@@ -24,7 +24,7 @@ public class PhaseBeamView extends RSSurfaceView {
             mRS = createRenderScriptGL(sc);
             mRS.setSurface(holder, w, h);
 
-            mRender = new PhaseBeamRS();
+            mRender = new UnicornBeamRS();
             mRender.init(getContext(), 240, mRS, getResources(), w, h);
         }
 

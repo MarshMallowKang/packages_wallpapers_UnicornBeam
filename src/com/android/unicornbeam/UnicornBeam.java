@@ -1,16 +1,16 @@
-package com.android.phasebeam;
+package com.android.unicornbeam;
 
 import android.app.Activity;
 import android.os.Bundle;
 
-public class PhaseBeam extends Activity {
+public class UnicornBeam extends Activity {
 
-    private PhaseBeamView mView;
+    private UnicornBeamView mView;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mView = new PhaseBeamView(this);
+        mView = new UnicornBeamView(this);
         setContentView(mView);
     }
 }

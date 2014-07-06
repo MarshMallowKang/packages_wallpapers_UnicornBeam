@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.phasebeam;
+package com.android.unicornbeam;
 
 import android.app.Activity;
 import android.app.WallpaperManager;
@@ -44,11 +44,11 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.SeekBar;
 
-public class PhaseBeamSelector extends Activity implements
+public class UnicornBeamSelector extends Activity implements
         CompoundButton.OnCheckedChangeListener, SeekBar.OnSeekBarChangeListener {
-    private static final String LOG_TAG = "PhaseBeamSelector";
+    private static final String LOG_TAG = "UnicornBeamSelector";
 
-    public static final String KEY_PREFS = "phasebeam";
+    public static final String KEY_PREFS = "unicornBeam";
     public static final String KEY_ENABLED = "enabled";
     public static final String KEY_HUE = "hue";
     public static final String KEY_SATURATION = "saturation";
@@ -78,7 +78,7 @@ public class PhaseBeamSelector extends Activity implements
 
         setContentView(R.layout.selector);
 
-        mWallpaperIntent = new Intent(this, PhaseBeamWallpaper.class);
+        mWallpaperIntent = new Intent(this,UnicornBeamWallpaper.class);
         mWallpaperManager = WallpaperManager.getInstance(this);
         mWallpaperConnection = new WallpaperConnection(mWallpaperIntent);
 
