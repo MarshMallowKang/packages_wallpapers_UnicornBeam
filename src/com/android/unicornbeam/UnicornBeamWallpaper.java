@@ -10,7 +10,7 @@ import android.util.DisplayMetrics;
 import android.view.SurfaceHolder;
 import android.view.WindowManager;
 
-public class UnicornWallpaper extends WallpaperService {
+public class UnicornBeamWallpaper extends WallpaperService {
 
     @Override
     public Engine onCreateEngine() {
