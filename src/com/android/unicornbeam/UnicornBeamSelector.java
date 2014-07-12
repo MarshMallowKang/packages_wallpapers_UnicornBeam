@@ -48,7 +48,7 @@ public class UnicornBeamSelector extends Activity implements
         CompoundButton.OnCheckedChangeListener, SeekBar.OnSeekBarChangeListener {
     private static final String LOG_TAG = "UnicornBeamSelector";
 
-    public static final String KEY_PREFS = "unicornBeam";
+    public static final String KEY_PREFS = "unicornbeam";
     public static final String KEY_ENABLED = "enabled";
     public static final String KEY_HUE = "hue";
     public static final String KEY_SATURATION = "saturation";
